@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./static/Style/base.css">
+        <script src="./static/script/upload.js"></script>
+        <title> Teste de enviar arquivos </title>
+    </head>
+
+    <body>
+        <form method="post" action="./index.html" enctype="multipart/form-data" name="form">
+            <div class="div_mensagem">
+                <h1><p> Envio de arquivos. </p></h1>
+                <p> Os arquivos não serão armazenados. </p>
+                <label class="" for="botao_pesquisar" >Anexar arquivo:</label>
+                <input class="" type="file" id="botao_anexar" name="botao_anexar" value="Anexar" />
+                <input class="" type="button" id="botao_enviar" name="botao_enviar" value="Clique para enviar" onclick="exibirMensagem()"></input>
+                <div id="mensagem" class="disabled"></div>
+            </div>
+        </form>
+    </body>
+</html>
